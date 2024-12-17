@@ -24,9 +24,20 @@ ArrayList<String> strings = new ArrayList<String>();
 			System.out.println(s);
 		}
 		//5. Print only the even numbered elements in the list.
-		System.out.println();
+		for(int i=0; i<5; i+=2) {
+			//if(i%2==0) {
+				System.out.println(strings.get(i));
+			//}
+		}
 		//6. Print all the Strings in reverse order.
-		
+		for(int i=4; i>=0; i--) {
+			System.out.println(strings.get(i));
+		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		for(String s : strings) {
+			if(s.contains("e")) {
+			System.out.println(s);
+			}
+		}
 	}
 }
